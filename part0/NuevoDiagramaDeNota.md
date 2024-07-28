@@ -1,4 +1,5 @@
-sequenceDiagram
+```mermaid
+    sequenceDiagram
     participant browser
     participant server
 
@@ -37,4 +38,4 @@ sequenceDiagram
     Note over browser: El navegador actualiza la vista con los datos de la nueva nota.
 
     Note right of browser: La nota aparece en la lista de notas.
-
+```
