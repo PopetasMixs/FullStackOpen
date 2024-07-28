@@ -7,19 +7,19 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
     activate server
-    server-->>browser: HTML document (contiene el marco para la SPA)
+    server-->>browser: HTML document
     deactivate server
 
     Note over browser: El navegador procesa el HTML, que incluye referencias al CSS y JavaScript necesarios para la SPA.
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa/main.css
     activate server
-    server-->>browser: CSS file (estilos para la SPA)
+    server-->>browser: CSS file
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa/spa.js
     activate server
-    server-->>browser: JavaScript file (lógica de la SPA)
+    server-->>browser: JavaScript file
     deactivate server
 
     Note over browser: El JavaScript de la SPA se ejecuta y muestra la interfaz de usuario inicial.
